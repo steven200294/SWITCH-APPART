@@ -20,7 +20,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/60 pointer-events-none" />
 
         {/* Content Inside the Image */}
-        <div className="relative z-10 w-full h-full min-h-[90vh] flex flex-col justify-start items-center px-4 pt-24 sm:pt-32 md:pt-40 lg:pt-48 pb-48 sm:pb-40 lg:pb-16">
+        <div className="relative z-10 w-full h-full min-h-[90vh] flex flex-col justify-center sm:justify-start items-center px-4 pt-0 sm:pt-32 md:pt-40 lg:pt-48 pb-0 sm:pb-40 lg:pb-16">
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
