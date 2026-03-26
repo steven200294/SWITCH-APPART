@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Users } from "lucide-react";
+import FloatingLines from "./FloatingLines";
 
 export function Hero() {
   return (
@@ -15,6 +16,21 @@ export function Hero() {
           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80')" }}
         />
         <div className="absolute inset-0 bg-black/30" />
+
+        {/* FloatingLines overlay */}
+        <div className="absolute inset-0 z-[1] pointer-events-none">
+          <FloatingLines
+            enabledWaves={["top", "middle", "bottom"]}
+            lineCount={5}
+            lineDistance={5}
+            bendRadius={5}
+            bendStrength={-0.5}
+            interactive={false}
+            parallax={false}
+            linesGradient={["#00BFFF", "#8A2BE2"]}
+            mixBlendMode="screen"
+          />
+        </div>
         
         {/* Subtle top inner glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/60 pointer-events-none" />
