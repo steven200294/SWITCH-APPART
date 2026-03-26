@@ -4,6 +4,7 @@ import { Features } from "@/components/Features";
 import { GallerySection } from "@/components/GallerySection";
 import { HowItWorksSection } from "@/components/HowItWorksSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { FAQSection } from "@/components/FAQSection";
 import { BottomCTA } from "@/components/BottomCTA";
 import { Footer } from "@/components/Footer";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <GallerySection />
       <HowItWorksSection />
       <TestimonialsSection />
+      <FAQSection />
       <BottomCTA />
       <Footer />
     </main>
