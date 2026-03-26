@@ -23,7 +23,7 @@ export default function Home() {
           interactive={true}
           parallax={true}
           linesGradient={["#00BFFF", "#8A2BE2"]}
-          mixBlendMode="multiply"
+          mixBlendMode="normal"
         />
       </div>
       <div className="relative z-10 flex flex-col w-full">
