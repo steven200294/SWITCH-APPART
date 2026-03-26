@@ -30,20 +30,19 @@ export function AboutSection() {
           transition={{ duration: 0.6 }}
           className="w-full lg:w-1/2 flex justify-center"
         >
-          <div className="relative w-[280px] sm:w-[320px] rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-black group cursor-pointer"
-            onClick={togglePlay}
-          >
+          <div className="relative w-[280px] sm:w-[320px] rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-black">
             <video
               ref={videoRef}
               src="/app-demo.mp4"
               loop
               playsInline
-              muted
+              controls
               className="w-full h-auto object-cover"
-              onEnded={() => setPlaying(false)}
+              onPlay={() => setPlaying(true)}
+              onPause={() => setPlaying(false)}
             />
             {/* Play/Pause overlay */}
-            <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${playing ? "opacity-0 group-hover:opacity-100" : "opacity-100"}`}>
+            <div onClick={togglePlay} className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 cursor-pointer ${playing ? "opacity-0 hover:opacity-100" : "opacity-100"}`}>
               <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center shadow-xl">
                 {playing
                   ? <Pause className="w-6 h-6 text-white" />
