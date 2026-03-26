@@ -44,7 +44,15 @@ export function AboutSection() {
         </motion.div>
 
         {/* Video + cartes flottantes */}
-        <div className="relative w-full flex justify-center items-center" style={{ minHeight: 520 }}>
+        <div className="relative w-full flex justify-center items-center rounded-3xl overflow-hidden" style={{ minHeight: 520 }}>
+
+          {/* Motif de fond */}
+          <div className="absolute inset-0 rounded-3xl" style={{
+            backgroundImage: `radial-gradient(circle, #d1d5db 1.5px, transparent 1.5px)`,
+            backgroundSize: '28px 28px',
+            opacity: 0.45,
+          }} />
+          <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#00BFFF]/5 via-transparent to-[#8A2BE2]/5" />
 
           {/* Carte grande — gauche */}
           <motion.div
@@ -76,7 +84,7 @@ export function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.05 }}
-            className="relative w-[230px] sm:w-[260px] rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-black z-20"
+            className="relative w-[280px] sm:w-[340px] rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-black z-20"
           >
             <video
               ref={videoRef}
