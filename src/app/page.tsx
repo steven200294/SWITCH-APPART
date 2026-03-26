@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { KeyExchangeBanner } from "@/components/KeyExchangeBanner";
 import { Features } from "@/components/Features";
 import { GallerySection } from "@/components/GallerySection";
 import { HowItWorksSection } from "@/components/HowItWorksSection";
@@ -14,7 +13,6 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Features />
-      <KeyExchangeBanner />
       <GallerySection />
       <HowItWorksSection />
       <TestimonialsSection />
