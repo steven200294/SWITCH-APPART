@@ -19,7 +19,7 @@ const features = [
 
 export function Features({ id = "features" }: { id?: string }) {
   return (
-    <section id={id} className="relative w-full bg-white py-24 md:py-32">
+    <section id={id} className="relative w-full bg-white/80 py-24 md:py-32">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* The aesthetic 3-column grid mimicking the provided screenshot structurally but matching light theme natively */}

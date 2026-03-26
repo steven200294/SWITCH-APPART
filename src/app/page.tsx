@@ -26,7 +26,7 @@ export default function Home() {
           mixBlendMode="normal"
         />
       </div>
-      <div className="relative z-10 flex flex-col w-full" style={{ background: 'rgba(255,255,255,0.82)' }}>
+      <div className="relative z-10 flex flex-col w-full">
         <Navbar />
         <Hero />
         <Features />

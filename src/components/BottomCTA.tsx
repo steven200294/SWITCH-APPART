@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function BottomCTA() {
   return (
-    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white/80">
       <div className="max-w-7xl mx-auto">
         <div className="relative w-full rounded-[2.5rem] overflow-hidden shadow-2xl min-h-[400px] flex flex-col items-center justify-center p-8 text-center group">
           

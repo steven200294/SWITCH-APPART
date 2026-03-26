@@ -27,7 +27,7 @@ export function HowItWorksSection() {
   ];
 
   return (
-    <section className="w-full py-24 bg-gray-50 px-4 sm:px-6 lg:px-8">
+    <section className="w-full py-24 bg-gray-50/80 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
         
         {/* Left Side: Vertical Image Card */}

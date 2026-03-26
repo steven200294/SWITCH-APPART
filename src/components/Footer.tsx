@@ -3,7 +3,7 @@ import { Home, Mail, Share2, Globe, MessageSquare } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="w-full bg-white border-t border-gray-200 pt-20 pb-10 relative overflow-hidden">
+    <footer className="w-full bg-white/80 border-t border-gray-200 pt-20 pb-10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8 mb-16">
           {/* Brand */}

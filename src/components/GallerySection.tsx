@@ -12,7 +12,7 @@ export function GallerySection() {
   ];
 
   return (
-    <section className="w-full py-24 bg-gray-50 flex flex-col items-center px-4 sm:px-6 lg:px-8">
+    <section className="w-full py-24 bg-gray-50/80 flex flex-col items-center px-4 sm:px-6 lg:px-8">
       
       {/* Intro Text */}
       <div className="flex flex-col items-center max-w-3xl text-center mb-16">

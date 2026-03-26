@@ -56,7 +56,7 @@ export function TestimonialsSection() {
   ];
 
   return (
-    <section className="w-full py-24 bg-white relative overflow-hidden" id="testimonials">
+    <section className="w-full py-24 bg-white/80 relative overflow-hidden" id="testimonials">
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
