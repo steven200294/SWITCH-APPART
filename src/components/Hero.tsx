@@ -80,7 +80,7 @@ export function Hero() {
           </motion.div>
 
           {/* Overlapping Vertical Image Cards on Bottom Right */}
-          <div className="absolute bottom-6 right-4 sm:bottom-10 sm:right-10 md:right-20 hidden lg:flex gap-4 items-end">
+          <div className="absolute bottom-10 right-20 hidden xl:flex gap-4 items-end">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
