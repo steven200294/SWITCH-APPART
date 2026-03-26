@@ -11,7 +11,7 @@ import FloatingLines from "@/components/FloatingLines";
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen flex-col w-full bg-white">
+    <main className="relative flex min-h-screen flex-col w-full" style={{ background: 'white' }}>
       {/* Arrière-plan global animé */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <FloatingLines
@@ -26,7 +26,7 @@ export default function Home() {
           mixBlendMode="normal"
         />
       </div>
-      <div className="relative z-10 flex flex-col w-full">
+      <div className="relative z-10 flex flex-col w-full" style={{ background: 'rgba(255,255,255,0.82)' }}>
         <Navbar />
         <Hero />
         <Features />

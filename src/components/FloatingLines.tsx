@@ -164,8 +164,9 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
       ) * 0.1;
     }
   }
-  float alpha = clamp(dot(col, vec3(0.299, 0.587, 0.114)) * 3.0, 0.0, 1.0);
-  fragColor = vec4(col, alpha);
+  vec3 brightCol = col * 5.0;
+  float alpha = clamp(max(col.r, max(col.g, col.b)) * 10.0, 0.0, 0.95);
+  fragColor = vec4(brightCol, alpha);
 }
 
 void main() {
@@ -313,7 +314,7 @@ export default function FloatingLines({
       });
     }
 
-    const material = new ShaderMaterial({ uniforms, vertexShader, fragmentShader });
+    const material = new ShaderMaterial({ uniforms, vertexShader, fragmentShader, transparent: true, depthWrite: false });
     const geometry = new PlaneGeometry(2, 2);
     const mesh = new Mesh(geometry, material);
     scene.add(mesh);
