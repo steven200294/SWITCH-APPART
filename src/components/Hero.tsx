@@ -9,10 +9,14 @@ export function Hero() {
       {/* Huge Inset Image Container */}
       <div className="relative w-full max-w-[1400px] rounded-[3rem] overflow-hidden shadow-2xl bg-gray-900 min-h-[90vh]">
         
-        {/* Main Background Image & Overlay */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-[30s] hover:scale-105"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80')" }}
+        {/* Main Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/hero.mp4"
         />
         <div className="absolute inset-0 bg-black/30" />
 
