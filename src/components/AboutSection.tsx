@@ -19,8 +19,15 @@ export function AboutSection() {
   };
 
   return (
-    <section className="w-full py-24 bg-white/80 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="max-w-5xl mx-auto flex flex-col items-center">
+    <section className="relative w-full py-24 bg-white/80 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Motif de fond sur toute la section */}
+      <div className="absolute inset-0 pointer-events-none" style={{
+        backgroundImage: `radial-gradient(circle, #cbd5e1 1.5px, transparent 1.5px)`,
+        backgroundSize: '26px 26px',
+        opacity: 0.6,
+      }} />
+
+      <div className="relative max-w-5xl mx-auto flex flex-col items-center">
 
         {/* Header */}
         <motion.div
