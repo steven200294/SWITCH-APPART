@@ -13,7 +13,7 @@ const features = [
   },
   {
     title: "Un Cadre Sécurisé Sans Complexité",
-    desc: "Des profils vérifiés, des dossiers cohérents et une validation finale par le bailleur. Un processus fluide et sécurisé à chaque étape, sans alourdir la démarche.",
+    desc: "Des profils vérifiés, des dossiers cohérents et une validation finale par le bailleur. Un processus fluide et sécurisé à chaque étape sans alourdir le processus.",
   },
 ];
 
