@@ -8,8 +8,8 @@ const features = [
     desc: "Découvrez comment notre algorithme intelligent analyse vos critères pour vous proposer des échanges parfaitement adaptés à vos envies de mobilité.",
   },
   {
-    title: "Zéro Frais Cachés : Voyagez Sans Vous Ruiner",
-    desc: "Apprenez des astuces simples pour économiser massivement en évitant les agences et les locations saisonnières excessives grâce à l'échange direct.",
+    title: "Zéro Frais Inutiles : Déménagez Sans Vous Ruiner",
+    desc: "Pas d'agence. Pas de frais cachés. Juste un échange de bail entre locataires, validé par les bailleurs et propriétaires.",
   },
   {
     title: "Sérénité Garantie : Contrats et Sécurité Inclus",
