@@ -6,23 +6,23 @@ export function HowItWorksSection() {
   const steps = [
     {
       num: "1",
-      title: "Choisir un Appartement",
-      desc: "Sélectionnez l'appartement qui correspond à votre planning et votre style de vie.",
+      title: "Publie ton logement",
+      desc: "Ajoute quelques photos, ton loyer, tes dates de départ et tes critères de recherche en moins de 5 minutes.",
     },
     {
       num: "2",
-      title: "Vérifier les Disponibilités",
-      desc: "Choisissez vos dates et destinations préférées.",
+      title: "Reçois tes Matchs",
+      desc: "Notre algorithme identifie les profils les plus cohérents pour des propositions parfaitement adaptées à tes besoins.",
     },
     {
       num: "3",
-      title: "Faire une Réservation",
-      desc: "Confirmez votre réservation en toute sécurité en quelques minutes via smart contract.",
+      title: "Échange avec ton match",
+      desc: "Discutez, validez votre projet d'échange et constituez vos dossiers.",
     },
     {
       num: "4",
-      title: "Profiter de l'Expérience",
-      desc: "Arrivez, explorez et créez des souvenirs inoubliables.",
+      title: "Validation du bailleur",
+      desc: "Le propriétaire choisit parmi les dossiers qualifiés pour finaliser l'échange.",
     },
   ];
 
@@ -68,7 +68,7 @@ export function HowItWorksSection() {
           >
             <h4 className="text-gray-400 font-bold uppercase tracking-widest text-xs mb-3">Comment ça marche</h4>
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary-dark">
-              Réservez un Échange en 4 Étapes Simples
+              Échangez votre appartement en 4 étapes simples
             </h2>
           </motion.div>
 
