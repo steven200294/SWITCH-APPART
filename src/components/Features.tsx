@@ -12,8 +12,8 @@ const features = [
     desc: "Pas d'agence. Pas de frais cachés. Juste un échange de bail entre locataires, validé par les bailleurs et propriétaires.",
   },
   {
-    title: "Sérénité Garantie : Contrats et Sécurité Inclus",
-    desc: "Explorez le monde l'esprit tranquille. Nos contrats automatisés et notre système de vérification d'identité sécurisent chaque étape de votre échange.",
+    title: "Un Cadre Sécurisé Sans Complexité",
+    desc: "Des profils vérifiés, des dossiers cohérents et une validation finale par le bailleur. Un processus fluide et sécurisé à chaque étape, sans alourdir la démarche.",
   },
 ];
 
