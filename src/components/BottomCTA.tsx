@@ -18,7 +18,7 @@ export function BottomCTA() {
 
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center max-w-2xl">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-medium text-white mb-6 tracking-tight drop-shadow-md">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-medium text-white mb-6 tracking-tight drop-shadow-md">
               Il existe déjà...<br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-[#8A2BE2]">Votre prochain appartement.</span><br/>
               Venez le découvrir
