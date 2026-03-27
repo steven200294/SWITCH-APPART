@@ -42,11 +42,11 @@ export function AboutSection() {
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary-dark leading-tight mb-4">
             Une app pensée pour{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-[#8A2BE2]">
-              les vrais voyageurs
+              ceux qui ne veulent plus chercher
             </span>
           </h2>
           <p className="text-gray-500 font-sans text-base md:text-lg leading-relaxed max-w-2xl">
-            SwitchAppart repense la façon dont vous voyagez. Publiez votre logement, trouvez un match, et échangez directement avec d'autres propriétaires — sans frais d'agence, sans intermédiaire.
+            Les meilleurs appartements ne sont pas sur le marché — ils sont déjà habités. Vous avez déjà ce que quelqu'un cherche. Et inversement.
           </p>
         </motion.div>
 
