@@ -46,7 +46,7 @@ export function HowItWorksSection() {
           
           <div className="absolute bottom-10 left-10 right-10 flex justify-between items-end">
             <p className="text-white font-medium text-lg max-w-[200px] leading-tight drop-shadow-md">
-              Trouvez votre sérénité dans de magnifiques appartements grâce à notre protocole de réservation sécurisé.
+              Un nouvel emploi, une nouvelle ville, une nouvelle étape. SwitchAppart vous permet de changer de logement sans repartir de zéro.
             </p>
             <button 
               onClick={() => window.dispatchEvent(new Event('open-download-modal'))}
