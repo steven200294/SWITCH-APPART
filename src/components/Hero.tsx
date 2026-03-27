@@ -74,7 +74,7 @@ export function Hero() {
                 <span className="text-[10px] sm:text-xs font-medium">Réservations</span>
               </div>
               <p className="text-[11px] sm:text-sm text-white/80 leading-relaxed hidden sm:block">
-                Voyagez dans des villes époustouflantes avec des échanges soigneusement sélectionnés.
+                L'art de changer d'adresse. Accédez à une nouvelle manière de déménager où chaque opportunité est soigneusement sélectionnée.
               </p>
             </div>
           </motion.div>
