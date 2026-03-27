@@ -32,7 +32,7 @@ export function GallerySection() {
           transition={{ delay: 0.1 }}
           className="text-4xl md:text-5xl font-heading font-bold text-primary-dark mb-6 leading-tight"
         >
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-[#8A2BE2] font-black">Moments</span> <span className="text-gray-400 font-light">Inoubliables au <br/> Cœur de la Ville</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-[#8A2BE2] font-black">Une expérience rare</span> <span className="text-gray-400 font-light">pensée pour simplifier chaque <br/> transition</span>
         </motion.h2>
 
         <motion.p
@@ -42,7 +42,7 @@ export function GallerySection() {
           transition={{ delay: 0.2 }}
           className="text-gray-500 text-base md:text-lg max-w-2xl font-sans"
         >
-          Découvrez des appartements époustouflants, explorez des quartiers animés et créez des souvenirs dans l'une des destinations les plus emblématiques du monde.
+          Entrez dans un cercle privé de locataires exigeants et accédez à des biens qui ne circulent pas sur le marché.
         </motion.p>
       </div>
 
