@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export function Navbar() {
+export function Navbar({ theme = "dark" }: { theme?: "light" | "dark" }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showDownloadModal, setShowDownloadModal] = useState(false);
@@ -26,12 +26,16 @@ export function Navbar() {
     };
   }, []);
 
+  const isLightText = !isScrolled && theme === "dark";
+
   return (
     <>
       <nav className={`fixed top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl z-50 transition-all duration-300 backdrop-blur-md border rounded-full px-4 sm:px-6 ${
         isScrolled 
           ? "bg-white/90 border-gray-200 shadow-lg text-primary-dark" 
-          : "bg-white/10 border-white/20 text-white"
+          : theme === "light" 
+            ? "bg-white/60 border-gray-200 shadow-sm text-primary-dark" 
+            : "bg-white/10 border-white/20 text-white"
       }`}>
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -41,22 +45,22 @@ export function Navbar() {
               alt="SwitchAppart Logo" 
               className="h-9 md:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-md"
             />
-            <span className={`font-heading font-bold text-xl tracking-wide hidden sm:block ${isScrolled ? "text-primary-dark" : "text-white"}`}>
-              Switch<span className={isScrolled ? "text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-[#8A2BE2] font-bold" : "text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-[#8A2BE2] font-bold drop-shadow-[0_0_8px_rgba(0,191,255,0.6)]"}>Appart</span>
+            <span className={`font-heading font-bold text-xl tracking-wide ${isLightText ? "text-white" : "text-primary-dark"}`}>
+              Switch<span className={isLightText ? "text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-[#8A2BE2] font-bold drop-shadow-[0_0_8px_rgba(0,191,255,0.6)]" : "text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-[#8A2BE2] font-bold"}>Appart</span>
             </span>
           </Link>
 
           {/* Desktop Links (Pill Inside Pill) */}
           <div className={`hidden md:flex items-center space-x-2 rounded-full px-4 py-1.5 border backdrop-blur-sm transition-colors duration-300 ${
-            isScrolled ? "bg-gray-100/80 border-gray-200" : "bg-white/10 border-white/10"
+            !isLightText ? "bg-gray-100/80 border-gray-200" : "bg-white/10 border-white/10"
           }`}>
-            <Link href="#about" className={`text-sm font-medium px-4 py-1 rounded-full transition-colors ${isScrolled ? "text-primary-dark hover:bg-white shadow-sm" : "text-white hover:bg-white/20"}`}>
+            <Link href="/a-propos" className={`text-sm font-medium px-4 py-1 rounded-full transition-colors ${!isLightText ? "text-primary-dark hover:bg-white shadow-sm" : "text-white hover:bg-white/20"}`}>
               À propos
             </Link>
-            <Link href="#careers" className={`text-sm font-medium px-4 py-1 rounded-full transition-colors ${isScrolled ? "text-gray-500 hover:text-primary-dark hover:bg-white" : "text-white/80 hover:text-white hover:bg-white/20"}`}>
+            <Link href="#careers" className={`text-sm font-medium px-4 py-1 rounded-full transition-colors ${!isLightText ? "text-gray-500 hover:text-primary-dark hover:bg-white" : "text-white/80 hover:text-white hover:bg-white/20"}`}>
               Carrières
             </Link>
-            <Link href="/contact" className={`text-sm font-medium px-4 py-1 rounded-full transition-colors ${isScrolled ? "text-gray-500 hover:text-primary-dark hover:bg-white" : "text-white/80 hover:text-white hover:bg-white/20"}`}>
+            <Link href="/contact" className={`text-sm font-medium px-4 py-1 rounded-full transition-colors ${!isLightText ? "text-gray-500 hover:text-primary-dark hover:bg-white" : "text-white/80 hover:text-white hover:bg-white/20"}`}>
               Contact
             </Link>
           </div>
@@ -96,7 +100,7 @@ export function Navbar() {
               className="md:hidden bg-white rounded-2xl mt-2 overflow-hidden shadow-xl"
             >
               <div className="px-4 py-4 space-y-1">
-                <Link href="#about" className="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-50 rounded-md">
+                <Link href="/a-propos" className="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-50 rounded-md">
                   À propos
                 </Link>
                 <Link href="#careers" className="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-50 rounded-md">
