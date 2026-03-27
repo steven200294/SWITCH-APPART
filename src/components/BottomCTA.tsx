@@ -19,7 +19,9 @@ export function BottomCTA() {
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center max-w-2xl">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-medium text-white mb-6 tracking-tight drop-shadow-md">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-[#8A2BE2]">Vivez la Magie</span> de SwitchAppart Aujourd'hui
+              Il existe déjà...<br/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-[#8A2BE2]">Votre prochain appartement.</span><br/>
+              Venez le découvrir
             </h2>
             <p className="text-white/90 text-sm md:text-base font-sans mb-10 max-w-lg drop-shadow">
               Découvrez des logements époustouflants, explorez des quartiers variés et rejoignez une communauté mondiale d'explorateurs modernes.
