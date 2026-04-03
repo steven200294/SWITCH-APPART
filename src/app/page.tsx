@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
+import { EmailCapture } from "@/components/EmailCapture";
 import { GallerySection } from "@/components/GallerySection";
 import { AboutSection } from "@/components/AboutSection";
 import { HowItWorksSection } from "@/components/HowItWorksSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Features />
+      <EmailCapture />
       <GallerySection />
       <AboutSection />
       <HowItWorksSection />
