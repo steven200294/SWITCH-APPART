@@ -57,10 +57,7 @@ export function Navbar({ theme = "dark" }: { theme?: "light" | "dark" }) {
             <Link href="/a-propos" className={`text-sm font-medium px-4 py-1 rounded-full transition-colors ${!isLightText ? "text-primary-dark hover:bg-white shadow-sm" : "text-white hover:bg-white/20"}`}>
               À propos
             </Link>
-            <Link href="#careers" className={`text-sm font-medium px-4 py-1 rounded-full transition-colors ${!isLightText ? "text-gray-500 hover:text-primary-dark hover:bg-white" : "text-white/80 hover:text-white hover:bg-white/20"}`}>
-              Carrières
-            </Link>
-            <Link href="/contact" className={`text-sm font-medium px-4 py-1 rounded-full transition-colors ${!isLightText ? "text-gray-500 hover:text-primary-dark hover:bg-white" : "text-white/80 hover:text-white hover:bg-white/20"}`}>
+<Link href="/contact" className={`text-sm font-medium px-4 py-1 rounded-full transition-colors ${!isLightText ? "text-gray-500 hover:text-primary-dark hover:bg-white" : "text-white/80 hover:text-white hover:bg-white/20"}`}>
               Contact
             </Link>
           </div>
@@ -102,9 +99,6 @@ export function Navbar({ theme = "dark" }: { theme?: "light" | "dark" }) {
               <div className="px-4 py-4 space-y-1">
                 <Link href="/a-propos" className="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-50 rounded-md">
                   À propos
-                </Link>
-                <Link href="#careers" className="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-50 rounded-md">
-                  Carrières
                 </Link>
                 <Link href="/contact" className="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-50 rounded-md">
                   Contact
