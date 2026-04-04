@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     question: "C'est pour les locataires seulement ?",
-    answer: "Non, aussi pour les colocataires et sous-locataires !",
+    answer: "Non, aussi pour les colocataires !",
   },
   {
     question: "C'est déjà dispo ?",

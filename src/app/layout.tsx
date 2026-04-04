@@ -13,8 +13,25 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "SwitchAppart | The Future of Housing Exchange",
-  description: "A neon-style, futuristic platform for swapping houses.",
+  title: "SwitchAppart | Échange ton appart, trouve le bon",
+  description: "La première plateforme qui te connecte directement avec d'autres locataires pour échanger vos logements. Publie. Match. Échange.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
+  openGraph: {
+    title: "SwitchAppart | Échange ton appart, trouve le bon",
+    description: "La première plateforme qui te connecte directement avec d'autres locataires pour échanger vos logements.",
+    images: ["/logo.png"],
+    siteName: "SwitchAppart",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SwitchAppart | Échange ton appart, trouve le bon",
+    description: "La première plateforme qui te connecte directement avec d'autres locataires pour échanger vos logements.",
+    images: ["/logo.png"],
+  },
 };
 
 export default function RootLayout({

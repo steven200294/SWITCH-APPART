@@ -45,7 +45,7 @@ export function Hero() {
               Publie. Match. Échange.
             </p>
             <p className="text-xs sm:text-sm md:text-base text-white/80 font-sans leading-relaxed drop-shadow mb-6">
-              La première plateforme qui te connecte directement avec d'autres propriétaires pour échanger vos logements.
+              La première plateforme qui te connecte directement avec d'autres locataires pour échanger vos logements.
             </p>
             <button
               onClick={() => window.dispatchEvent(new Event('open-download-modal'))}
