@@ -150,11 +150,11 @@ export function TestimonialsSection() {
           className="mt-16 flex justify-center relative w-full z-20"
         >
           <button 
-            onClick={() => window.dispatchEvent(new Event('open-download-modal'))}
+            onClick={() => window.open("https://switchappart.app/", "_blank")}
             className="flex items-center gap-2 px-8 py-3 rounded-full text-base font-bold shadow-lg transition-transform hover:-translate-y-1 btn-neon cursor-pointer"
           >
-            Télécharger pour voir plus d'avis
-            <span className="w-5 h-5 bg-white text-black rounded-full flex items-center justify-center text-[10px]">↓</span>
+            Découvrir l'application pour voir plus d'avis
+            <span className="w-5 h-5 bg-white text-black rounded-full flex items-center justify-center text-[10px]">→</span>
           </button>
         </motion.div>
 

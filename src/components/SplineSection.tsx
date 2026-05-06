@@ -32,10 +32,10 @@ export function SplineSection() {
             Découvrez cet environnement 3D qui illustre la dimension futuriste de notre plateforme immobilière SwitchAppart.
           </p>
           <button 
-            onClick={() => window.dispatchEvent(new Event('open-download-modal'))}
+            onClick={() => window.open("https://switchappart.app/", "_blank")}
             className="flex items-center justify-center gap-2 px-6 py-2.5 mx-auto rounded-full text-sm font-bold shadow-lg transition-transform hover:-translate-y-1 btn-neon pointer-events-auto"
           >
-            Télécharger l'app pour explorer <span className="text-[10px] bg-white text-black px-1.5 py-0.5 rounded-full">↓</span>
+            Découvrir l'application <span className="text-[10px] bg-white text-black px-1.5 py-0.5 rounded-full">→</span>
           </button>
         </motion.div>
       </div>

@@ -67,12 +67,12 @@ export function Navbar({ theme = "dark" }: { theme?: "light" | "dark" }) {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                setShowDownloadModal(true);
+                window.open("https://switchappart.app/", "_blank");
               }}
               className="flex items-center justify-center px-5 py-1.5 font-medium rounded-full text-sm btn-neon"
             >
-              <span>Télécharger</span>
-              <span className={`ml-2 w-5 h-5 rounded-full flex items-center justify-center text-xs ${isScrolled ? "bg-white/20 text-white" : "bg-white text-primary-dark"}`}>↓</span>
+              <span>Découvrir l'application</span>
+              <span className={`ml-2 w-5 h-5 rounded-full flex items-center justify-center text-xs ${isScrolled ? "bg-white/20 text-white" : "bg-white text-primary-dark"}`}>→</span>
             </button>
           </div>
 
@@ -108,11 +108,11 @@ export function Navbar({ theme = "dark" }: { theme?: "light" | "dark" }) {
                     onClick={(e) => {
                       e.preventDefault();
                       setIsOpen(false);
-                      setShowDownloadModal(true);
+                      window.open("https://switchappart.app/", "_blank");
                     }}
                     className="w-full text-center px-4 py-2 rounded-full font-medium flex items-center justify-center gap-2 btn-neon"
                   >
-                    Télécharger <span className="text-xs">↓</span>
+                    Découvrir l'application <span className="text-xs">→</span>
                   </button>
                 </div>
               </div>

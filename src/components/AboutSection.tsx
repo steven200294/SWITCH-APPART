@@ -157,7 +157,7 @@ export function AboutSection() {
           className="mt-10"
         >
           <button
-            onClick={() => window.dispatchEvent(new Event('open-download-modal'))}
+            onClick={() => window.open("https://switchappart.app/", "_blank")}
             className="inline-flex items-center gap-3 px-8 py-3 rounded-full font-bold text-sm btn-neon"
           >
             En savoir plus

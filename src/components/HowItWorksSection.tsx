@@ -49,11 +49,11 @@ export function HowItWorksSection() {
               Un nouvel emploi, une nouvelle ville, une nouvelle étape. SwitchAppart vous permet de changer de logement sans repartir de zéro.
             </p>
             <button 
-              onClick={() => window.dispatchEvent(new Event('open-download-modal'))}
+              onClick={() => window.open("https://switchappart.app/", "_blank")}
               className="flex items-center gap-2 px-5 py-2 rounded-full text-sm font-bold shadow-lg transition-transform hover:-translate-y-1 btn-neon"
             >
-              Télécharger l'app
-              <span className="w-5 h-5 bg-white text-black rounded-full flex items-center justify-center text-[10px]">↓</span>
+              Découvrir l'application
+              <span className="w-5 h-5 bg-white text-black rounded-full flex items-center justify-center text-[10px]">→</span>
             </button>
           </div>
         </motion.div>

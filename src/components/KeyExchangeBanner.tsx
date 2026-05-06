@@ -30,7 +30,7 @@ export function KeyExchangeBanner() {
             </p>
             
             <button 
-              onClick={() => window.dispatchEvent(new Event('open-download-modal'))}
+              onClick={() => window.open("https://switchappart.app/", "_blank")}
               className="flex items-center gap-2 px-8 py-3 rounded-full text-base font-bold shadow-[0_0_15px_rgba(0,191,255,0.4)] transition-transform hover:-translate-y-1 btn-neon cursor-pointer"
             >
               Rejoindre le Réseau

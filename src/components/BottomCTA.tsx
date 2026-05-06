@@ -30,14 +30,14 @@ export function BottomCTA() {
             <button 
               onClick={(e) => {
                 e.preventDefault();
-                window.dispatchEvent(new Event('open-download-modal'));
+                window.open("https://switchappart.app/", "_blank");
               }}
               className="group flex flex-col items-center gap-2"
             >
               <div className="w-16 h-16 rounded-full flex items-center justify-center shadow-xl transition-transform duration-300 group-hover:-translate-y-2 group-hover:shadow-2xl btn-neon">
-                <span className="font-bold text-xl">↓</span>
+                <span className="font-bold text-xl">→</span>
               </div>
-              <span className="text-white text-sm font-bold uppercase tracking-widest mt-2 group-hover:text-[#00FFFF] transition-colors drop-shadow-md">Télécharger l'app</span>
+              <span className="text-white text-sm font-bold uppercase tracking-widest mt-2 group-hover:text-[#00FFFF] transition-colors drop-shadow-md">Découvrir l'application</span>
             </button>
           </div>
 

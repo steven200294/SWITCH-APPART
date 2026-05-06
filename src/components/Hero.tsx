@@ -48,10 +48,10 @@ export function Hero() {
               La première plateforme qui te connecte directement avec d'autres locataires pour échanger vos logements.
             </p>
             <button
-              onClick={() => window.dispatchEvent(new Event('open-download-modal'))}
+              onClick={() => window.open("https://switchappart.app/", "_blank")}
               className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 rounded-full text-sm sm:text-base font-bold btn-neon"
             >
-              Télécharger l'application <span className="w-5 h-5 bg-white text-black rounded-full flex items-center justify-center text-[10px]">↓</span>
+              Découvrir l'application <span className="w-5 h-5 bg-white text-black rounded-full flex items-center justify-center text-[10px]">→</span>
             </button>
           </motion.div>
 
