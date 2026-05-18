@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(kill 9174)",
+      "Bash(npx next:*)",
+      "Bash(kill -9 9174)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}

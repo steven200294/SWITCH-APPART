@@ -13,6 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://switchappart.app"),
   title: "SwitchAppart | Échange ton appart, trouve le bon",
   description: "La première plateforme qui te connecte directement avec d'autres locataires pour échanger vos logements. Publie. Match. Échange.",
   icons: {

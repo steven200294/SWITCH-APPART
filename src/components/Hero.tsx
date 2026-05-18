@@ -79,42 +79,6 @@ export function Hero() {
             </div>
           </motion.div>
 
-          {/* Overlapping Vertical Image Cards on Bottom Right */}
-          <div className="absolute bottom-10 right-20 hidden xl:flex gap-4 items-end">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="w-40 h-56 rounded-2xl overflow-hidden relative shadow-2xl group cursor-pointer border-2 border-white/20"
-            >
-              <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')" }} />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 pb-3">
-                <p className="text-white font-medium text-sm">Loft Parisien</p>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="w-44 h-64 rounded-2xl overflow-hidden relative shadow-2xl group cursor-pointer border-2 border-white/20"
-            >
-              <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')" }} />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 pb-3">
-                <p className="text-white font-medium text-sm">Studio New-Yorkais</p>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="w-40 h-56 rounded-2xl overflow-hidden relative shadow-2xl group cursor-pointer border-2 border-white/20"
-            >
-              <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')" }} />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 pb-3">
-                <p className="text-white font-medium text-sm">Suite Tokyoïte</p>
-              </div>
-            </motion.div>
-          </div>
 
         </div>
       </div>
